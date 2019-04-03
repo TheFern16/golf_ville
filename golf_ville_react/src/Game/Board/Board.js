@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Square from '../Square/Square.js';
 import logo from '../../logo.svg';
 import './Board.css';
 
