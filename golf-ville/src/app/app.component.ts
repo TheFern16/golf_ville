@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Brand Choices';
-  titles = ['Mizuno', 'Titleist', 'Taylormade', 'Cobra', 'Ping'];
+  titles = ['Callaway', 'Cbra', 'Mizuno', 'Ping', 'Taylormade', 'Titleist'];
 
   handleClick(event) {
   	this.title = event.target.innerHTML;
