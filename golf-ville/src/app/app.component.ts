@@ -16,4 +16,8 @@ export class AppComponent {
   handleMouseOver(event) {
 	event.target.classList.add('active');
   }
+
+  handleMouseLeave(event) {
+  	event.target.classList.remove('active');
+  }
 };

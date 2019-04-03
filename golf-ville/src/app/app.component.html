@@ -9,6 +9,7 @@
         class="list-group-item" 
         (click)="handleClick($event)"
         (mouseenter)="handleMouseOver($event)"
+        (mouseleave)="handleMouseLeave($event)"
         *ngFor="let title of titles"
         >
         {{ title }}
