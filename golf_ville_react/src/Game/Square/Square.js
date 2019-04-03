@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import logo from '../../logo.svg';
 import './Square.css';
 
 class Square extends React.Component {
 	render() {
 		return (
-			<h1>Hello World</h1>
+			<img src={logo} className="App-logo" alt="logo" />
 		)
 	}
 };
