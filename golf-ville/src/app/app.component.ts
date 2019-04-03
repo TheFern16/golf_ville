@@ -12,4 +12,8 @@ export class AppComponent {
   handleClick(event) {
   	this.title = event.target.innerHTML;
   }
+
+  handleMouseOver(event) {
+	event.target.classList.add('active');
+  }
 };

@@ -1,17 +1,21 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Choose your club selection! 
-  </h1>
-  <ul>
-    <li 
-      (click)="handleClick($event)"
-      *ngFor="let title of titles"
-      >
-      {{ title }}
-    </li>
-  </ul>
-<div>
-
+<div class="jumbotron">
+  <h1 class="display-4">golfville</h1>
+  <p class="lead">This is a simple angular website dedicated to all things golf.</p>
+  <hr class="my-4">
+  <p>Please take your time to explore your brand:</p>
+  <div class="list-group">
+    <ul class="list-group list-group-horizontal-sm">
+      <li
+        class="list-group-item" 
+        (click)="handleClick($event)"
+        (mouseenter)="handleMouseOver($event)"
+        *ngFor="let title of titles"
+        >
+        {{ title }}
+      </li>
+    </ul>
+  </div>
+</div>
 
 <router-outlet></router-outlet>
+
