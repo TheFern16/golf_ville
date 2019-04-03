@@ -5,7 +5,9 @@ import './Square.css';
 class Square extends React.Component {
 	render() {
 		return (
-			<img src={logo} className="App-logo" alt="logo" />
+			<div>
+				<img src={logo} className="App-logo" alt="logo" />
+			</div>
 		)
 	}
 };
