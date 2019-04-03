@@ -6,10 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'golf-ville';
-  titles = ['mizuno', 'titleist', 'taylormade'];
+  title = 'Brand Choices';
+  titles = ['Mizuno', 'Titleist', 'Taylormade', 'Cobra', 'Ping'];
 
   handleClick(event) {
-  	this.title = event.target.innerHTML
+  	this.title = event.target.innerHTML;
   }
 };
