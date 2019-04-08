@@ -11,6 +11,7 @@
         (mouseenter)="handleMouseOver($event)"
         (mouseleave)="handleMouseLeave($event)"
         *ngFor="let title of titles"
+        routerLink="/{{title}}"
         >
         {{ title }}
       </li>

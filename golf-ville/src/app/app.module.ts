@@ -8,11 +8,6 @@ import { AppComponent } from './app.component';
 import { LandingComponent } from './landing/landing.component'
 import { TitleistComponent } from './brands/titleist/titleist.component';
 
-const applicationRoutes: Routes = [
-  { path: 'titleist', component: TitleistComponent },
-  { path: '**', component: LandingComponent }
-]
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +17,6 @@ const applicationRoutes: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(applicationRoutes)
   ],
   providers: [],
   bootstrap: [
