@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { LandingComponent } from './landing/landing.component'
 import { TitleistComponent } from './brands/titleist/titleist.component';
 
 const applicationRoutes: Routes = [
@@ -17,6 +18,7 @@ const applicationRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
+    LandingComponent,
     TitleistComponent
   ],
   imports: [
@@ -27,6 +29,7 @@ const applicationRoutes: Routes = [
   providers: [],
   bootstrap: [
     AppComponent,
+    LandingComponent,
     TitleistComponent    
   ]
 })
