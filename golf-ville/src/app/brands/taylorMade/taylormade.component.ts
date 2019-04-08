@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-taylorMade',
+  selector: 'app-taylormade',
   templateUrl: './taylorMade.component.html',
   styleUrls: ['./taylorMade.component.css']
 })
-export class TaylormadeComponent {
+export class TaylorMadeComponent {
 };
