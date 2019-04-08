@@ -6,27 +6,24 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { LandingComponent } from './landing/landing.component'
-import { TaylorMadeComponent } from './brands/taylorMade/taylorMade.component'
+import { HeaderComponent } from './header/header.component';
+import { TaylorMadeComponent } from './brands/taylorMade/taylorMade.component';
 import { TitleistComponent } from './brands/titleist/titleist.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LandingComponent,
+    HeaderComponent,
     TaylorMadeComponent,
     TitleistComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [
-    AppComponent,
-    LandingComponent,
-    TaylorMadeComponent,
-    TitleistComponent    
+    AppComponent
   ]
 })
 export class AppModule {}

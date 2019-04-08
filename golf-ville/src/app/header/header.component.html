@@ -1,0 +1,20 @@
+<div class="jumbotron">
+  <h1 class="display-4">golfville</h1>
+  <p class="lead">This is a simple angular website dedicated to all things golf.</p>
+  <hr class="my-4">
+  <p>Choose a brand:</p>
+  <div class="list-group">
+    <ul class="list-group list-group-horizontal-sm">
+      <li
+        class="list-group-item" 
+        (click)="handleClick($event)"
+        *ngFor="let title of titles"
+        (mouseenter)="handleMouseOver($event)"
+        (mouseleave)="handleMouseLeave($event)"
+        routerLink="/{{title}}"
+          >
+        {{ title }}
+      </li>
+    </ul>
+  </div>
+</div>
