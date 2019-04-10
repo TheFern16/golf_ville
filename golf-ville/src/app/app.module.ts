@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
+import { PingComponent } from './brands/ping/ping.component';
 import { TaylorMadeComponent } from './brands/taylorMade/taylorMade.component';
 import { TitleistComponent } from './brands/titleist/titleist.component';
 
@@ -14,6 +15,7 @@ import { TitleistComponent } from './brands/titleist/titleist.component';
   declarations: [
     AppComponent,
     HeaderComponent,
+    PingComponent,
     TaylorMadeComponent,
     TitleistComponent
   ],
