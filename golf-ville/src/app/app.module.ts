@@ -6,6 +6,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
+import { CobraComponent } from './brands/cobra/cobra.component';
 import { HeaderComponent } from './header/header.component';
 import { MizunoComponent } from './brands/mizuno/mizuno.component';
 import { PingComponent } from './brands/ping/ping.component';
@@ -15,6 +16,7 @@ import { TitleistComponent } from './brands/titleist/titleist.component';
 @NgModule({
   declarations: [
     AppComponent,
+    CobraComponent,
     HeaderComponent,
     MizunoComponent,
     PingComponent,
