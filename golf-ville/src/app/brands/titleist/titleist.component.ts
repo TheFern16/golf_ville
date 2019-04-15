@@ -6,4 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./titleist.component.css']
 })
 export class TitleistComponent {
+	clubs = ['Drivers', 'Fairways', 'Hybrids', 'Irons', 'Putters'];
 };
