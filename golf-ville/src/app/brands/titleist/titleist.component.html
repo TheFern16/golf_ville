@@ -5,14 +5,13 @@
   </div>
 	<div class="row">
 	  <div class="col-sm-6">
-	    <div class="card">
+	    <div class="card" *ngFor="let club of clubs">
 	      <div class="card-body">
-	        <h5 class="card-title">Special title treatment</h5>
+	        <h5 class="card-title">{{ club.setName }}</h5>
 	        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-	        <img class="card-img" src="/assets/ap1.jpeg">
+	        <img class="card-img-top" [src]="club.setPath">
 	      </div>
 	    </div>
 	  </div>
 	</div>
 </div>
-
