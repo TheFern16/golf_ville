@@ -3,20 +3,21 @@
     <h1 class="display-4">golfville</h1>
     <p class="lead">Just for fun: Please don't sue me :)</p>
     <hr class="my-4">
-    <p>Choose a brand:</p>
-    <div class="list-group nav justify-content-center">
-      <ul class="list-group">
-        <li
-          class="list-group-item"
-          (click)="handleClick($event)"
-          *ngFor="let title of titles"
-          (mouseenter)="handleMouseOver($event)"
-          (mouseleave)="handleMouseLeave($event)"
+    <p>Choose a brand:</p>    
+    <ul class="nav nav-pills nav-fill">
+      <li 
+        class="nav-item"
+        (click)="handleClick($event)"  
+        *ngFor="let title of titles"
+      >
+        <a 
+          class="nav-link" 
           routerLink="/{{title}}"
-            >
-          {{ title }}
-        </li>
-      </ul>
-    </div>
+          [routerLinkActive]="['active']"          
+        >
+          {{title}}
+        </a>
+      </li>
+    </ul>
   </div>
 </div>
