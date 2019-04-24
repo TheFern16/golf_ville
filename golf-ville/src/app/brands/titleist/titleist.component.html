@@ -1,17 +1,12 @@
-<div class="card text-center">
-  <div class="card-body">
-    <h5 class="card-title">Titleist</h5>
-    <p class="card-text">Club Selection:</p>
-  </div>
+<div class="container">
 	<div class="row">
-	  <div class="col-sm-6">
-	    <div class="card" *ngFor="let club of clubs">
-	      <div class="card-body">
-	        <h5 class="card-title">{{ club.setName }}</h5>
-	        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-	        <img class="card-img-top" [src]="club.setPath">
-	      </div>
-	    </div>
-	  </div>
-	</div>
+  <div class="col-sm-6" *ngFor="let club of clubs">
+    <div class="card">
+    	<img class="card-img-top" [src]="club.setPath">
+      <div class="card-body">
+        <h5 class="card-title">{{ club.setName }}</h5>
+        <p class="card-text">{{ club.setText }}</p>
+      </div>
+    </div>
+  </div>
 </div>
